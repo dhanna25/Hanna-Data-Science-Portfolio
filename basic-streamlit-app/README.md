@@ -1,1 +1,3 @@
+# basic_streamlit_app/
+My streamlit app will serve to present people who have traveled abroad and their ratings of their experience. A chart will demonstrate the mean score of ratings per city,. The user will then be asked to select the city they traveled to a provide a rating for their experience. Once the user submits their response a new chart will appear which will include the users input into the means. This app is great for gathering feedback from students and visualizing study abroad experiences in real time! streamlit run /Users/dinahanna/Documents/GitHub/Hanna-Data-Science-Portfolio/basic_streamlit_app-/main.py
 
