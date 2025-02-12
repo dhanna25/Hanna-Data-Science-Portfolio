@@ -43,3 +43,4 @@ if not df.empty:
       st.bar_chart(updated_city_ratings)
 
 
+
