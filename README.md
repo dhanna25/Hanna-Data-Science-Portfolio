@@ -1,7 +1,5 @@
 # Hanna-Data-Science-Portfolio
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 ## Hello! Welcome to my GitHub!
 My name is Dina Hanna and I am a Junior at the University of Notre Dame.
 <ul>
