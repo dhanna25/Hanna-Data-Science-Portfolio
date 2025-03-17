@@ -13,6 +13,6 @@ matplotlib: static visualizations
 Using pd.melt(), we reshape the dataset from wide to long and split the sport_gender column into separate columns. Using dropna, we remove any missing values in the medal column. Using factorize(), a unique medalist_id is generated for each medalist to summarize medal counts for the pivot table. 
 
 # References
-Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
-Tidy Data Paper: https://vita.had.co.nz/papers/tidy-data.pdf
+1) Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+2) Tidy Data Paper: https://vita.had.co.nz/papers/tidy-data.pdf
 
