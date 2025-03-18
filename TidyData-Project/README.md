@@ -16,4 +16,9 @@ Using pd.melt(), we reshape the dataset from wide to long and split the sport_ge
 1) Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 2) Tidy Data Paper: https://vita.had.co.nz/papers/tidy-data.pdf
 
-![alt text](<Screenshot 2025-03-17 at 7.46.57 PM.png>)
+
+
+
+![alt text](<Screenshot 2025-03-17 at 8.53.51 PM.png>)
+
+![alt text](<Screenshot 2025-03-17 at 8.54.35 PM.png>)
