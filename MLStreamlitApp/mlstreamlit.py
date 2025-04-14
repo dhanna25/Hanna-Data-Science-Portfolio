@@ -4,7 +4,6 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
@@ -16,7 +15,6 @@ from sklearn.datasets import (
    load_breast_cancer, load_iris, load_wine, load_digits,
    load_diabetes, fetch_covtype, load_linnerud
 )
-
 
 # ----------------- Page Config -----------------
 st.set_page_config(page_title="ML Playground", layout="wide")
@@ -42,7 +40,6 @@ sample_dataset = st.sidebar.selectbox(
    ]
 )
 
-
 # Dataset descriptions
 dataset_descriptions = {
    "Breast Cancer": "🔬 Binary classification to detect malignant vs benign tumors.",
@@ -53,7 +50,6 @@ dataset_descriptions = {
    "Covertype (small preview)": "🌲 Forest cover type classification from cartographic features.",
    "Linnerud": "🏃 Multi-output regression on physiological data."
 }
-
 
 def load_sample_dataset(name):
    if name == "Breast Cancer":
@@ -97,49 +93,39 @@ st.dataframe(df.head(), use_container_width=True)
 st.sidebar.header("2. Select Target Column")
 target_column = st.sidebar.selectbox("🎯 Target Column", df.columns)
 
-
 # Encode non-numeric target
 if df[target_column].dtype == 'object':
    df[target_column] = LabelEncoder().fit_transform(df[target_column])
 
-
 X = df.drop(columns=[target_column])
 y = df[target_column]
-
 
 # Re-encode target just in case
 y = LabelEncoder().fit_transform(y)
 
-
 # One-hot encode categorical features
 X = pd.get_dummies(X)
-
 
 # Feature scaling
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
-
 
 # ----------------- Model Settings -----------------
 st.sidebar.header("3. Adjust Model Settings")
 test_size = st.sidebar.slider("🧪 Test Set Size", 0.1, 0.5, 0.3)
 C = st.sidebar.slider("📉 Regularization Strength (C)", 0.01, 10.0, 1.0)
 
-
 # ----------------- Train/Test Split -----------------
 X_train, X_test, y_train, y_test = train_test_split(
    X_scaled, y, test_size=test_size, random_state=42
 )
 
-
 # ----------------- Model Training -----------------
 model = LogisticRegression(C=C, max_iter=1000)
 model.fit(X_train, y_train)
 
-
 y_pred = model.predict(X_test)
 y_prob = model.predict_proba(X_test)
-
 
 # ----------------- Results -----------------
 st.subheader("📈 Model Performance Overview")
@@ -148,10 +134,8 @@ col1.metric("🎯 Accuracy", f"{accuracy_score(y_test, y_pred):.2f}")
 col2.metric("⚖️ Precision", f"{precision_score(y_test, y_pred, average='weighted'):.2f}")
 col3.metric("📣 Recall", f"{recall_score(y_test, y_pred, average='weighted'):.2f}")
 
-
 with st.expander("🧾 View Detailed Classification Report"):
    st.text(classification_report(y_test, y_pred))
-
 
 # ----------------- Confusion Matrix -----------------
 st.subheader("📊 Confusion Matrix")
@@ -160,7 +144,6 @@ sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt="d", cmap="YlGnBu"
 ax.set_xlabel("Predicted")
 ax.set_ylabel("Actual")
 st.pyplot(fig)
-
 
 # ----------------- AUC and ROC -----------------
 if len(np.unique(y)) == 2:
