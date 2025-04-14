@@ -16,16 +16,17 @@ from sklearn.datasets import (
    load_diabetes, fetch_covtype, load_linnerud
 )
 
-# ----------------- Page Config -----------------
+
+# Configuring the Streamlit page layout and title
 st.set_page_config(page_title="ML Playground", layout="wide")
 st.title("Supervised ML Playground with Logistic Regression")
 
 
-# ----------------- Sidebar: Dataset Selection -----------------
+# Sidebar allows the user to upload a custom dataset or select a sample dataset
 st.sidebar.header("1. Upload or Choose Dataset")
 uploaded_file = st.sidebar.file_uploader("📁 Upload CSV", type=["csv"])
 
-
+#Options for selecting a sample dataset
 sample_dataset = st.sidebar.selectbox(
    "📚 Or use a sample dataset",
    options=[
@@ -40,7 +41,7 @@ sample_dataset = st.sidebar.selectbox(
    ]
 )
 
-# Dataset descriptions
+# Dataset descriptions with a brief explanation of each dataset
 dataset_descriptions = {
    "Breast Cancer": "🔬 Binary classification to detect malignant vs benign tumors.",
    "Iris": "🌸 Multiclass classification for flower species.",
@@ -51,6 +52,7 @@ dataset_descriptions = {
    "Linnerud": "🏃 Multi-output regression on physiological data."
 }
 
+# Function to load sample datasets based on user selection
 def load_sample_dataset(name):
    if name == "Breast Cancer":
        return load_breast_cancer(as_frame=True).frame
@@ -70,7 +72,7 @@ def load_sample_dataset(name):
    else:
        return None
 
-
+# Load dataset based on user input: uploaded file or sample dataset
 if uploaded_file:
    df = pd.read_csv(uploaded_file)
    st.info("✅ Custom dataset uploaded.")
@@ -84,60 +86,63 @@ else:
    st.stop()
 
 
-# ----------------- Show Data -----------------
+# Displaying a preview of the loaded dataset
 st.subheader("📄 Dataset Preview")
 st.dataframe(df.head(), use_container_width=True)
 
 
-# ----------------- Target Selection -----------------
+# Sidebar for selecting the target column for model prediction
 st.sidebar.header("2. Select Target Column")
 target_column = st.sidebar.selectbox("🎯 Target Column", df.columns)
 
-# Encode non-numeric target
+
+# Encoding the target column if it is categorical (non-numeric)
 if df[target_column].dtype == 'object':
    df[target_column] = LabelEncoder().fit_transform(df[target_column])
 
 X = df.drop(columns=[target_column])
 y = df[target_column]
 
-# Re-encode target just in case
+# Re-encode target in case it was transformed
 y = LabelEncoder().fit_transform(y)
 
-# One-hot encode categorical features
+# One-hot encode categorical features for the model
 X = pd.get_dummies(X)
 
-# Feature scaling
+# Feature scaling to standardize dsta
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# ----------------- Model Settings -----------------
+
+# Sidebar for adjusting model settings like test size and regularization strength (C)
 st.sidebar.header("3. Adjust Model Settings")
 test_size = st.sidebar.slider("🧪 Test Set Size", 0.1, 0.5, 0.3)
 C = st.sidebar.slider("📉 Regularization Strength (C)", 0.01, 10.0, 1.0)
 
-# ----------------- Train/Test Split -----------------
+# Splitting the dataset into training and test sets based on the selected test size
 X_train, X_test, y_train, y_test = train_test_split(
    X_scaled, y, test_size=test_size, random_state=42
 )
 
-# ----------------- Model Training -----------------
+# Initializing and training the logistic regression model
 model = LogisticRegression(C=C, max_iter=1000)
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 y_prob = model.predict_proba(X_test)
 
-# ----------------- Results -----------------
+# Displaying performance metrics like accuracy, precision, and recall
 st.subheader("📈 Model Performance Overview")
 col1, col2, col3 = st.columns(3)
 col1.metric("🎯 Accuracy", f"{accuracy_score(y_test, y_pred):.2f}")
 col2.metric("⚖️ Precision", f"{precision_score(y_test, y_pred, average='weighted'):.2f}")
 col3.metric("📣 Recall", f"{recall_score(y_test, y_pred, average='weighted'):.2f}")
 
+
 with st.expander("🧾 View Detailed Classification Report"):
    st.text(classification_report(y_test, y_pred))
 
-# ----------------- Confusion Matrix -----------------
+# Visualizing confusion matrix using seaborn heatmap
 st.subheader("📊 Confusion Matrix")
 fig, ax = plt.subplots()
 sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt="d", cmap="YlGnBu", ax=ax)
@@ -145,7 +150,7 @@ ax.set_xlabel("Predicted")
 ax.set_ylabel("Actual")
 st.pyplot(fig)
 
-# ----------------- AUC and ROC -----------------
+# If binary classification, display ROC curve and AUC score
 if len(np.unique(y)) == 2:
    st.subheader("📉 ROC Curve & AUC Score")
    auc = roc_auc_score(y_test, y_prob[:, 1])
@@ -166,7 +171,7 @@ else:
    class_labels = np.unique(y)
    y_test_binarized = label_binarize(y_test, classes=class_labels)
 
-
+ # Check for consistency in class labels for multiclass AUC
    if y_prob.shape[1] != y_test_binarized.shape[1]:
        st.warning("⚠️ AUC not calculated: mismatch between class labels and prediction probabilities.")
    else:
