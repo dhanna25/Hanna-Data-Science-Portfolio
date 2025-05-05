@@ -1,9 +1,13 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Name,City,Rating
 <<<<<<< HEAD
 =======
 Andrea,London,7
 >>>>>>> 0f4738fc14dddfd0355df607166d4dea636b6f25
+=======
+Andrea,London,7
+>>>>>>> Stashed changes
 =======
 Andrea,London,7
 >>>>>>> Stashed changes
@@ -16,6 +20,7 @@ Mauro,Sydney,10
 Miguel,Sydney,9
 Miranda,Madrid,7
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Jonny,Toledo,8
 <<<<<<< HEAD
 Andrea,London,7
@@ -27,6 +32,9 @@ User,Sydney,1
 =======
 
 >>>>>>> 0f4738fc14dddfd0355df607166d4dea636b6f25
+=======
+Jonny,Toledo,8
+>>>>>>> Stashed changes
 =======
 Jonny,Toledo,8
 >>>>>>> Stashed changes
