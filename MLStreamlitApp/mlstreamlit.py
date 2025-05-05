@@ -16,11 +16,9 @@ from sklearn.datasets import (
    load_diabetes, fetch_covtype, load_linnerud
 )
 
-
 # Configuring the Streamlit page layout and title
 st.set_page_config(page_title="ML Playground", layout="wide")
 st.title("Supervised ML Playground with Logistic Regression")
-
 
 # Sidebar allows the user to upload a custom dataset or select a sample dataset
 st.sidebar.header("1. Upload or Choose Dataset")
