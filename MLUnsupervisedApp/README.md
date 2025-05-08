@@ -21,13 +21,14 @@ The Unsupervised Machine Learning App is an interactive web application built us
     DBSCAN: Users can adjust the eps (epsilon) parameter that determines the density threshold for cluster formation.
     Agglomerative Clustering: Users can choose the number of clusters (n_clusters) to partition the data.
 
-3. Visualization and Metrics
-    PCA: Visualizes clusters by reducing the data to 2D using Principal Component Analysis.
-    t-SNE: Provides a high-dimensional visualization of clusters using t-SNE, preserving the pairwise distances between points.
-    
-    Elbow Plot: Helps determine the optimal number of clusters for K-Means by plotting the within-cluster sum of squares (WCSS).
-    Silhouette Score: Measures how similar each data point is to its own cluster compared to other clusters.
-    Davies-Bouldin Index: A metric for evaluating cluster separation, where lower values indicate better clustering.
+## 3. Visualization and Metrics
+
+- **PCA**: Visualizes clusters by reducing the data to 2D using **Principal Component Analysis**.
+- **t-SNE**: Provides a high-dimensional visualization of clusters using **t-SNE**, preserving the pairwise distances between points.
+- **Elbow Plot**: Helps determine the optimal number of clusters for **K-Means** by plotting the within-cluster sum of squares (**WCSS**).
+- **Silhouette Score**: Measures how similar each data point is to its own cluster compared to other clusters.
+- **Davies-Bouldin Index**: A metric for evaluating cluster separation, where lower values indicate better clustering.
+
 
 4. Data Cleaning
 The app allows users to handle missing values by either filling them with the mean/median or dropping rows with missing values.
