@@ -16,9 +16,17 @@ This project is an interactive machine learning web app built using Streamlit th
 - **Logistic Regression**: Primary model in the app. It is a binary classifier but can be used for multiclass classification tasks as well (with the OvR strategy).
 - The app allows hyperparameter tuning, such as adjusting the regularization strength (C) and the test/train split ratio.
 
-. All necessary libraries include Streamlit, pandas, NumPy, scikit-learn, seaborn, and matplotlib. A complete list with specific version numbers can be found in the requirements.txt file.
+### How Hyperparameters Are Selected/Tuned:
+- **Test Size**: The user can adjust the proportion of data to be used for testing the model. This affects how the model is trained and evaluated.
+- **Regularization Strength (C)**: The user can change the value of C, which controls the regularization. Higher values of C reduce regularization, while smaller values of C increase regularization, helping to prevent overfitting.
 
-This project is inspired by practical tutorials on logistic regression and model evaluation using Scikit-learn, as well as interactive data exploration practices encouraged in the Streamlit documentation. The app references several built-in datasets such as Breast Cancer, Iris, Wine, and Digits to allow users to quickly experiment without needing to source their own dsta. Visual examples include metric dashboards, confusion matrices, and ROC curves, offering immediate feedback and intuitive understanding of model behavior. By integrating educational datasets, automated preprocessing, model training, and performance visualization in a clean web interface, this project aims to support students, educators, and data science learners in building hands-on intuition for logistic regression. It also provides a simple, reproducible foundation for further machine learning projects or teaching demos. 
+### References
+- **[Streamlit](https://docs.streamlit.io/)**
+- **[Scikit-learn Documentation](https://scikit-learn.org/stable/)**
+- **[Logistic Regression Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)**
+- **[Confusion Matrix and AUC Calculation](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics)**
+
+### Visual Examples
 <img width="500" alt="Screenshot 2025-04-14 at 5 46 25 PM" src="https://github.com/user-attachments/assets/ccd764b0-77f4-4981-8277-c5129598b583" />
 <img width="500" alt="Screenshot 2025-04-14 at 5 47 59 PM" src="https://github.com/user-attachments/assets/b5952356-0322-4922-bcbb-f0cfb2a45989" />
 <img width="680" alt="Screenshot 2025-04-14 at 5 51 36 PM" src="https://github.com/user-attachments/assets/33830bdf-143b-486f-b46e-e22ec5ccc340" />
