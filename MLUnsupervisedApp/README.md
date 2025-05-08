@@ -16,12 +16,12 @@ The Unsupervised Machine Learning App is an interactive web application built us
     DBSCAN: A density-based clustering algorithm that identifies clusters based on the density of points, handling noise well.
     Agglomerative Clustering: A hierarchical clustering method that builds a tree of clusters through a bottom-up approach.
 
-2. Hyperparameter Tuning
-    K-Means: Users can adjust the number of clusters (n_clusters) for the K-Means algorithm.
-    DBSCAN: Users can adjust the eps (epsilon) parameter that determines the density threshold for cluster formation.
-    Agglomerative Clustering: Users can choose the number of clusters (n_clusters) to partition the data.
+# 2. Hyperparameter Tuning
+- **K-Means**: Users can adjust the number of clusters (n_clusters) for the K-Means algorithm.
+- **DBSCAN**: Users can adjust the eps (epsilon) parameter that determines the density threshold for cluster formation.
+- **Agglomerative Clustering**: Users can choose the number of clusters (n_clusters) to partition the data.
 
-## 3. Visualization and Metrics
+# 3. Visualization and Metrics
 
 - **PCA**: Visualizes clusters by reducing the data to 2D using **Principal Component Analysis**.
 - **t-SNE**: Provides a high-dimensional visualization of clusters using **t-SNE**, preserving the pairwise distances between points.
