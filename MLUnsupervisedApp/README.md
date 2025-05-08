@@ -1,0 +1,3 @@
+## Project Overview
+The Unsupervised Machine Learning App is an interactive web application built using Streamlit that enables users to experiment with unsupervised machine learning techniques, specifically clustering algorithms. The app allows users to upload their datasets, experiment with three popular clustering models (K-Means, DBSCAN, and Agglomerative Clustering), and visualize the results interactively. Additionally, the app includes performance evaluation metrics like Silhouette Score and Davies-Bouldin Index, and visualization options such as PCA and t-SNE to aid in better understanding and analyzing the clustering results. Users can also export the clustering results and save/load trained models.
+
