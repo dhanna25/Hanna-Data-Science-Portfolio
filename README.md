@@ -42,6 +42,6 @@ The project showcases my expertise in creating interactive data applications wit
 
 Skills: Python, Streamlit, Pandas, K-Means Clustering, DBSCAN, Agglomerative Clustering, Data Preprocessing, Matplotlib, Seaborn, Performance Evaluation
 
-Link to Notebook: 
+Link to Notebook: https://github.com/dhanna25/Hanna-Data-Science-Portfolio/tree/main/MLUnsupervisedApp
 
 
