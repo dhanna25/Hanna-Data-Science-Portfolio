@@ -1,2 +1,16 @@
-# basic_streamlit_app
-My streamlit app will serve to record and showcase students who have traveled abroad. The app will the ratings of their experience and present statistical data based on the ratings. This will be done with a chart that will demonstrate the mean score of ratings per city. The user will then be asked to select the city they traveled to and provide a rating for their experience. Once the user submits their response a new chart will appear which will include the users input in the means. This app is great for gathering feedback from students and visualizing study abroad experiences in real time! To code this app I found that I had to unlock many functions I had been unfamiliar with. The first function, load_data(file), is responsible for loading the study abroad ratings from a CSV file into a Pandas DataFrame. It first attempts to read studyabroad_data.csv using pd.read_csv(file), returning the dataset if the file is found. If the file is missing, the function handles the exception with a try-except block, displaying an error message via st.error() and returning an empty DataFrame with columns (Name, City, Rating). The data visualization component of the app is implemented by grouping the dataset by city and calculating the mean rating for each location using df.groupby("City")["Rating"].mean(). This function aggregates ratings for each city and returns a new Pandas Series object, where the index is the city name and the values are the corresponding average ratings. For user input, the app provides a section where users can submit their study abroad ratings. The st.text_input() function captures the user’s name, while st.selectbox() allows them to select a city from the available options and rate their experience from 1 to 10. The st.button("Submit Rating") function acts as a trigger for saving the data. If empty, an error message is displayed using st.error(). The updated dataset is then saved back to the CSV file using df.to_csv(csv_file, index=False), ensuring that the changes persist across sessions. Finally, the bar chart is refreshed to reflect the new average ratings. Note: To view this app please run it with the following command, "streamlit run /Users/dinahanna/Documents/GitHub/Hanna-Data-Science-Portfolio/basic_streamlit_app-/main.py"
+# Basic Streamlit App
+
+## Project Overview
+This Streamlit app allows students to submit ratings of their study abroad experiences, visualizing the average ratings per city. It allows users to explore and submit ratings for their study abroad experiences. The app displays a table of students' ratings by city, along with a bar chart that shows the average rating for each city. Users can also submit their ratings, which are then added to the dataset, and the app will dynamically update the ratings by city.
+
+## App Features
+- **View Ratings**: See the ratings provided by students for different cities.
+- **Submit Your Rating**: Add your rating for a specific city and share your study abroad experience.
+- **Dynamic Data Update**: The app updates the ratings and visualizations after a new rating is submitted.
+
+## Instructions
+1. Install Required Libraries
+2. Run the app by running "streamlit run /Users/dinahanna/Documents/GitHub/Hanna-Data-Science-Portfolio/basic_streamlit_app-/main.py"
+3. Access the app by visiting http://localhost:8501 to interact with the app.
+
+

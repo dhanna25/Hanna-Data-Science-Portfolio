@@ -7,12 +7,12 @@ This is a repository containing portfolio of data science projects completed by 
 Install dependencies using requirements.txt.
 Run notebooks as usual by using a jupyter notebook server, VScode etc.
 
-## Streamlit Project 
+## Streamlit App 
 TLDR: In this project I created an app that allows students to submit and view ratings of their study abroad experiences. Users select a city, rate their experience, and submit their feedback. The app calculates and displays the average ratings for each city on a bar chart. If the user provides valid input, the data is saved to a CSV file and the chart is updated. 
 
 Description: My streamlit app will serve to record and showcase students who have traveled abroad. The app will the ratings of their experience and present statistical data based on the ratings. This will be done with a chart that will demonstrate the mean score of ratings per city. The user will then be asked to select the city they traveled to and provide a rating for their experience. Once the user submits their response a new chart will appear which will include the users input in the means. This app is great for gathering feedback from students and visualizing study abroad experiences in real time!
 
-Skills: Streamlit, Pandas, Data Visualization, Python Functions, Data aggregation, Error Handling
+Skills: Streamlit, Pandas, Numpy, Data Visualization, Python Functions, Data aggregation, Error Handling
 
 Link to Notebook: https://github.com/dhanna25/Hanna-Data-Science-Portfolio/tree/main/basic-streamlit-app
 
