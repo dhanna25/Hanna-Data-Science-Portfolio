@@ -33,3 +33,8 @@ The app allows users to handle missing values by either filling them with the me
 
 ### 5. Model Saving & Loading
 Users can save trained models and load them again for future use without retraining.
+
+## References 
+- **https://docs.streamlit.io/**
+- **https://scikit-learn.org/stable/**
+- **https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html**
