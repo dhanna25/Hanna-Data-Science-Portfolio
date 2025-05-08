@@ -35,6 +35,8 @@ The app allows users to handle missing values by either filling them with the me
 Users can save trained models and load them again for future use without retraining.
 
 ## References 
-- **[Click here to visit Streamlit](https://docs.streamlit.io/)**
-- **https://scikit-learn.org/stable/**
-- **https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html**
+- **[Streamlit](https://docs.streamlit.io/)**
+- **[Scikit-learn Documentation](https://scikit-learn.org/stable/)**
+- **[t-SNE Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)**
+- **[K-Means Clustering in Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)**
+- **[DBSCAN Clustering in Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)**
