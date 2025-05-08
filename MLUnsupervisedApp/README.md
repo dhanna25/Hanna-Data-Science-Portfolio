@@ -40,3 +40,6 @@ Users can save trained models and load them again for future use without retrain
 - **[t-SNE Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)**
 - **[K-Means Clustering in Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)**
 - **[DBSCAN Clustering in Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)**
+
+## Visual Examples
+![alt text](<Screenshot 2025-05-08 at 3.23.31 PM.png>)
