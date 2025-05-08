@@ -42,4 +42,4 @@ Users can save trained models and load them again for future use without retrain
 - **[DBSCAN Clustering in Scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html)**
 
 ## Visual Examples
-<img width="500" alt="Screenshot 2025-05-08 at 3.23.31 PM.png" src="https://github.com/user-attachments/assets/ccd764b0-77f4-4981-8277-c5129598b583" />
+<img width="500" alt="Screenshot 2025-05-08 at 3.23.31 PM.png" src="/Users/dinahanna/Desktop/Screenshot 2025-05-08 at 3.23.31 PM.png" />
