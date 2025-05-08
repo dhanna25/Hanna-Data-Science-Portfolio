@@ -5,11 +5,8 @@ The Unsupervised Machine Learning App is an interactive web application built us
 
 ## Intructions
 1. Install the Required Dependencies: install all the necessary dependencies by running pip install -r requirements.txt
-
 2. Run the App: After installing the dependencies, you can run the app locally using Streamlit. Use the following command: streamlit run /Users/dinahanna/Documents/GitHub/Hanna-Data-Science-Portfolio/MLUnsupervisedApp/StreamlitApp.py
-
 3. Access the App: Once the app is running, open your web browser and go to the following address to view the app: http://localhost:8501
-
 4. Deployed Version:  You can access the deployed version using the link provided: 
 
 ## App Features

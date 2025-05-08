@@ -3,11 +3,8 @@ This project is an interactive machine learning web app built using Streamlit th
 
 ## Intructions
 1. Install the required dependencies using pip install requirements.txt. 
-
 2. Once drpendencies are installed, the app can be launched with streamlit run /Users/dinahanna/Documents/GitHub/Hanna-Data-Science-Portfolio/MLStreamlitApp/mlstreamlit.py
-
 3. The app will be accessible in the browser at localhost:8501
-
 4. Deployed Version:  You can access the deployed version using the link provided: https://dhanna25-hanna-data-science-po-mlstreamlitappmlstreamlit-lpmb5d.streamlit.app/
 
 ## App Features 

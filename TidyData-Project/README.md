@@ -11,6 +11,7 @@ Dependencies and their purpose:
 pandas: data manipulation and analysis
 matplotlib: static visualizations
 
+
 ## Pre-Processing Steps:
 Using pd.melt(), we reshape the dataset from wide to long and split the sport_gender column into separate columns. Using dropna, we remove any missing values in the medal column. Using factorize(), a unique medalist_id is generated for each medalist to summarize medal counts for the pivot table. 
 
