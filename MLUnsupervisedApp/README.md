@@ -35,6 +35,6 @@ The app allows users to handle missing values by either filling them with the me
 Users can save trained models and load them again for future use without retraining.
 
 ## References 
-- **https://docs.streamlit.io/**
+- **[Click here to visit Streamlit](https://docs.streamlit.io/)**
 - **https://scikit-learn.org/stable/**
 - **https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html**
