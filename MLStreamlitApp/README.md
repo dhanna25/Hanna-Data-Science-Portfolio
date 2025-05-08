@@ -20,13 +20,13 @@ This project is an interactive machine learning web app built using Streamlit th
 - **Test Size**: The user can adjust the proportion of data to be used for testing the model. This affects how the model is trained and evaluated.
 - **Regularization Strength (C)**: The user can change the value of C, which controls the regularization. Higher values of C reduce regularization, while smaller values of C increase regularization, helping to prevent overfitting.
 
-### References
+## References
 - **[Streamlit](https://docs.streamlit.io/)**
 - **[Scikit-learn Documentation](https://scikit-learn.org/stable/)**
 - **[Logistic Regression Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)**
 - **[Confusion Matrix and AUC Calculation](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics)**
 
-### Visual Examples
+## Visual Examples
 <img width="500" alt="Screenshot 2025-04-14 at 5 46 25 PM" src="https://github.com/user-attachments/assets/ccd764b0-77f4-4981-8277-c5129598b583" />
 <img width="500" alt="Screenshot 2025-04-14 at 5 47 59 PM" src="https://github.com/user-attachments/assets/b5952356-0322-4922-bcbb-f0cfb2a45989" />
 <img width="680" alt="Screenshot 2025-04-14 at 5 51 36 PM" src="https://github.com/user-attachments/assets/33830bdf-143b-486f-b46e-e22ec5ccc340" />
