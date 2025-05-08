@@ -18,7 +18,7 @@ Using pd.melt(), we reshape the dataset from wide to long and split the sport_ge
 
 
 
-
+# Visual Examples
 ![alt text](<Screenshot 2025-03-17 at 8.53.51 PM.png>)
 
 ![alt text](<Screenshot 2025-03-17 at 8.54.35 PM.png>)
