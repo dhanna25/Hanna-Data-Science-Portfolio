@@ -44,3 +44,4 @@ Users can save trained models and load them again for future use without retrain
 ## Visual Examples
 <img width="500" alt="Screenshot 2025-05-08 at 3 23 31 PM" src="https://github.com/user-attachments/assets/c41c7635-c84c-47c7-b1f8-64121e42ee11" />
 <img width="400" alt="Screenshot 2025-05-08 at 3 39 34 PM" src="https://github.com/user-attachments/assets/3cca5236-db65-4ee0-88b5-be0d2142c532" />
+<img width="730" alt="Screenshot 2025-05-08 at 3 41 40 PM" src="https://github.com/user-attachments/assets/581f4562-451d-405d-a327-4188655614b1" />
