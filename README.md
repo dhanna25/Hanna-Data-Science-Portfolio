@@ -33,3 +33,15 @@ Description: This project is an interactive machine learning web application bui
 Skills: Streamlit, Logistic Regression, Pandas, NumPY, Scikit-learn, Data Preprocessing, Hyperparameter Tuning, Model Evaluation
 
 Link to Notebook: https://github.com/dhanna25/Hanna-Data-Science-Portfolio/tree/main/MLStreamlitApp
+
+## Unsupervised ML App
+TLDR: In this project I built an interactive unsupervised learning experince, allowing users to upload a tabular dataset, experiment with hyperparameters, and examine how these affect model traning and performance. 
+
+Description: This application serves as a hands-on platform for exploring unsupervised learning through clustering techniques. Users can work with algorithms such as K-Means, DBSCAN, and Agglomerative Clustering, experimenting with different parameters while visualizing outcomes through dimensional reduction techniques. The tool provides quality metrics including Silhouette Score and Davies-Bouldin Index to objectively evaluate clustering performance.
+The project showcases my expertise in creating interactive data applications with Streamlit, demonstrating my capabilities in implementing machine learning workflows from preprocessing through visualization. By integrating features for model evaluation, parameter tuning, and model persistence, this application highlights my ability to develop comprehensive, user-friendly machine learning solutions that bridge theoretical concepts with practical implementation.
+
+Skills: Python, Streamlit, Pandas, K-Means Clustering, DBSCAN, Agglomerative Clustering, Data Preprocessing, Matplotlib, Seaborn, Performance Evaluation
+
+Link to Notebook: 
+
+
