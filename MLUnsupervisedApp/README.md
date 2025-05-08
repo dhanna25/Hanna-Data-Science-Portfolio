@@ -24,6 +24,7 @@ The Unsupervised Machine Learning App is an interactive web application built us
 3. Visualization and Metrics
     PCA: Visualizes clusters by reducing the data to 2D using Principal Component Analysis.
     t-SNE: Provides a high-dimensional visualization of clusters using t-SNE, preserving the pairwise distances between points.
+    
     Elbow Plot: Helps determine the optimal number of clusters for K-Means by plotting the within-cluster sum of squares (WCSS).
     Silhouette Score: Measures how similar each data point is to its own cluster compared to other clusters.
     Davies-Bouldin Index: A metric for evaluating cluster separation, where lower values indicate better clustering.
