@@ -1,3 +1,5 @@
+# ML Streamlit App
+
 ## Project Overview
 This project is an interactive machine learning web app built using Streamlit that allows users to explore the fundamentals of supervised learning through logistic regression. The primary goal of the app is to create an educational and user-friendly environment where users can upload their own datasets or choose from a selection of preloaded ones, define a target variable, and instantly build and evaluate a logistic regression model. The app handles preprocessing automatically, making it easy to work with both numeric and categorical data. Users can interactively adjust the test-train split ratio and regularization strength (C) to observe how these hyperparameters affect model performance. Key evaluation metrics such as accuracy, precision, and recall are displayed, along with a detailed classification report. For binary classification problems, the app also generates a Receiver Operating Characteristic (ROC) curve and calculates the Area Under the Curve (AUC) score. 
 
