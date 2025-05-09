@@ -1,4 +1,4 @@
-# Hanna-Data-Science-Portfolio
+# Dina's Data Science Portfolio
 
 ## Data Science and Machine Learning Projects
 This is a repository containing portfolio of data science projects completed by me for academic purposes. 
