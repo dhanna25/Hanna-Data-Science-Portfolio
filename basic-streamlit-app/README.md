@@ -17,3 +17,6 @@ This Streamlit app allows students to submit ratings of their study abroad exper
 - **[Streamlit](https://docs.streamlit.io/)**
 - **[Pandas](https://pandas.pydata.org/pandas-docs/stable/)**
 - **[Matplotib](https://matplotlib.org/stable/users/index.html)**
+
+## Visual Examples
+
