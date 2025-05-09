@@ -14,8 +14,7 @@ Run notebooks as usual by using a jupyter notebook server, VScode etc.
 
 #### Portfolio 2 (Tidy Data Project): This project applies tidy data principles to organize disorganized datasets for improved clarity and analysis. Key principles include placing each variable (e.g., "medalist_name," "sport," "gender," "medal") in its own column and representing each observation as a row, where each row corresponds to a medalist and their attributes.
 
-#### Portfolio 3 (ML Streamlit App): This Streamlit app lets users explore logistic regression by uploading datasets, defining a target variable, and building a model. It handles data preprocessing and allows adjustments to hyperparameters like test-train split and regularization. Key metrics (accuracy, precision, recall) and visualizations (ROC curves) are displayed, providing an interactive tool for learning machine learning and model evaluation.
-#### Link: https://dhanna25-hanna-data-science-po-mlstreamlitappmlstreamlit-lpmb5d.streamlit.app/
+#### Portfolio 3 (ML Streamlit App): This Streamlit app lets users explore logistic regression by uploading datasets, defining a target variable, and building a model. It handles data preprocessing and allows adjustments to hyperparameters like test-train split and regularization. Key metrics (accuracy, precision, recall) and visualizations (ROC curves) are displayed, providing an interactive tool for learning machine learning and model evaluation. Link: https://dhanna25-hanna-data-science-po-mlstreamlitappmlstreamlit-lpmb5d.streamlit.app/
 
 #### Final Project (Unsupervised ML App): In this project, I created an interactive unsupervised learning experience where users can upload a dataset, experiment with hyperparameters, and explore their impact on model training and performance.
 #### Link: https://dhanna25-hanna-data-scienc-mlunsupervisedappstreamlitapp-93g6oh.streamlit.app/
