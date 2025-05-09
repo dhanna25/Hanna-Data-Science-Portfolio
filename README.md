@@ -10,7 +10,7 @@ Run notebooks as usual by using a jupyter notebook server, VScode etc.
 ## At A Glance
 
 #### Portfolio 1 (Streamlit App): 
-This app was created as an interactive way to allow students who would like to go abroad, learn more about the study abroad experiences of their peers 
+This app was created as an interactive way to allow students who would like to go abroad, learn more about the study abroad experiences of their peers. Users select a city, rate their experience, and submit their feedback. The app calculates and displays the average ratings for each city on a bar chart. 
 
 #### Portfolio 2 (Tidy Data Project): 
 This project applies tidy data principles to organize disorganized datasets for improved clarity and analysis. Key principles include placing each variable (e.g., "medalist_name," "sport," "gender," "medal") in its own column and representing each observation as a row, where each row corresponds to a medalist and their attributes.
