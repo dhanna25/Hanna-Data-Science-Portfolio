@@ -20,3 +20,4 @@ This Streamlit app allows students to submit ratings of their study abroad exper
 
 ## Visual Examples
 
+<img width="711" alt="Screenshot 2025-05-08 at 8 43 45 PM" src="https://github.com/user-attachments/assets/5ded4ad9-782d-4c55-a661-17877201e20b" />
