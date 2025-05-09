@@ -7,6 +7,19 @@ This is a repository containing portfolio of data science projects completed by 
 Install dependencies using requirements.txt.
 Run notebooks as usual by using a jupyter notebook server, VScode etc.
 
+## At A Glance
+
+### Portfolio 1 (Streamlit App): This app was created as an interactive way to allow students who would like to go abroad, learn more about the study abroad experiences of their peers 
+#### Link: 
+
+### Portfolio 2 (Tidy Data Project): This project applies tidy data principles to organize disorganized datasets for improved clarity and analysis. Key principles include placing each variable (e.g., "medalist_name," "sport," "gender," "medal") in its own column and representing each observation as a row, where each row corresponds to a medalist and their attributes.
+
+### Portfolio 3 (ML Streamlit App): This Streamlit app lets users explore logistic regression by uploading datasets, defining a target variable, and building a model. It handles data preprocessing and allows adjustments to hyperparameters like test-train split and regularization. Key metrics (accuracy, precision, recall) and visualizations (ROC curves) are displayed, providing an interactive tool for learning machine learning and model evaluation.
+#### Link: https://dhanna25-hanna-data-science-po-mlstreamlitappmlstreamlit-lpmb5d.streamlit.app/
+
+### Final Project (Unsupervised ML App): In this project, I created an interactive unsupervised learning experience where users can upload a dataset, experiment with hyperparameters, and explore their impact on model training and performance.
+#### Link: https://dhanna25-hanna-data-scienc-mlunsupervisedappstreamlitapp-93g6oh.streamlit.app/
+
 ## Streamlit App 
 TLDR: In this project I created an app that allows students to submit and view ratings of their study abroad experiences. Users select a city, rate their experience, and submit their feedback. The app calculates and displays the average ratings for each city on a bar chart. If the user provides valid input, the data is saved to a CSV file and the chart is updated. 
 
@@ -25,7 +38,7 @@ Skills: Data Cleaning, Tiny Data Principles, Data Manipulation with Pandas, Data
 
 Link to notebook: https://github.com/dhanna25/Hanna-Data-Science-Portfolio/tree/main/TidyData-Project
 
-## MLStreamlitApp 
+## ML Streamlit App 
 TLDR: This Streamlit app allows users to explore logistic regression by uploading datasets, defining a target variable, and building a model. It automatically handles data preprocessing and lets users adjust hyperparameters like test-train split and regularization. The app displays key metrics (accuracy, precision, recall) and visualizations like ROC curves. The app provides an interactive, educational tool for learning machine learning and model evaluation.
 
 Description: This project is an interactive machine learning web application built using Streamlit, where users can explore different supervised classification models. The app enables users to upload datasets, select models, and view performance metrics such as accuracy, precision, recall, and AUC. Visualizations like confusion matrices and ROC curves are also included for better model evaluation. The app build on my understanding of machine learning by allowing me to apply theoretical knowledge into an intersctive platform where I can experiment with model evaluation and selection. Working with real datasets and implementing models like logistic regression has further deepened my understanding of the steps involved in a typical ML workflow, from data preprocessing to performance evaluation. It has also enhanced my skills in using Python and libraries such as scikit-learn and Streamlit. This compliments my portfolio by demonstrating my ability to not only build machine learning models but also deploy them interactively using Python. It highlights my skills in web development with Streamlit, as well as model deployment, which are essential skills in the field of data science and machine learning. This projecy serves as a showcase for how I can take machine learning models beyond just theoretical implementations and present them in a user-friendly, interactive format. It also reflects my ability to communicate and visualize complex data science concepts, making them accessible to non-technical users.

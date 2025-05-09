@@ -7,7 +7,7 @@ st.subheader("This app will present us with data!")
 # Initialize session state for DataFrame if not already initialized
 if 'df' not in st.session_state:
     # Read data from CSV (this only happens once when app is first loaded)
-    st.session_state.df = pd.read_csv("data/studyabroad_data.csv")
+    st.session_state.df = pd.read_csv("basic-streamlit-app/data/studyabroad_data.csv")
 
 # Display the dataset
 st.write("Here's the dataset loaded from a CSV file:")
